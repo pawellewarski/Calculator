@@ -1,5 +1,7 @@
 package pl.akademiakodu.Calculator;
 
+import java.util.List;
+
 public class Calculator {
 
     private double a;
