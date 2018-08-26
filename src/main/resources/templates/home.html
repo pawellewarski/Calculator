@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form method="get" action="result">
+                <div class="form-group">
+                    <label> podaj wartość a:
+                        <input type="number" step="0.1" name="first_number" placeholder="Number one">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label> podaj wartość b:
+                        <input type="number" step="0.1" name="second_number" placeholder="Number two">
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label"> Dodawanie
+                        <input type="radio" class="form-check-input" name="options" id="option_add"
+                               value="add">
+                    </label>
+                    <label class="form-check-label"> Odejmowanie
+                        <input type="radio" class="form-check-input" name="options" id="option_subtraction"
+                               value="subtraction">
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
