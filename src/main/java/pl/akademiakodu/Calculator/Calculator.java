@@ -34,6 +34,33 @@ public class Calculator {
         return a + b;
     }
 
+    public double subtraction(double a, double b) {
+        return a - b;
+    }
+
+    public double multiplication(double a, double b) {
+        return a * b;
+    }
+
+    public double division(double a, double b) {
+        return a / b;
+    }
+
+    public double power(double a, double b) {
+        return Math.pow(a,b);
+    }
+
+    public double max(double a, double b) {
+        return a>b?a:b;
+    }
+
+    public double min(double a, double b) {
+        return a<b?a:b;
+    }
+
+
+
+
 
 
 
